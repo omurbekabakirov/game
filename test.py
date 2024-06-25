@@ -101,7 +101,7 @@ unit_price float,
 stock_quantity integer,
 store_id integer references stores(store_id))"""
 
-con = create_connection("test.db")
+con = create_connection("test2.db")
 if con:
     create_table(con, category_table)
     create_table(con, store_table)
